@@ -2,9 +2,10 @@ export const metadata = {
   name: 'emty chart',
   id: 'rawgraphs.emptychart',
   // thumbnail,
-  // icon,
+  //icon: you can import an svg file here or a url to an svg file
   categories: ['Test', 'Debugging'],
-  description: 'An empty chart to bootstrap new ones',
-  // code: 'https://github.com/rawgraphs',
-  // tutorial: 'https://rawgraphs.io/learning/',
+  description:
+    'Semicircular parliament chart, creating one dot for each seat. Based on the d3-parliament-chart by Daniel Kao',
+  // code: you can add the link to the source code
+  // tutorial: you can add the link to a tutorial
 }

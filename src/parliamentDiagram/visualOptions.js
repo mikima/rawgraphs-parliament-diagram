@@ -1,10 +1,40 @@
 export const visualOptions = {
-  // one object for each visual option
-  // example option
-  // optionID: {                // unique id, used in the render.js
-  //   type: 'number',          // type of input. Can be: number, text, boolean, colorScale
-  //   label: 'Option label',   // the label displayed in the interface
-  //   default: 20,             // default value
-  //   group: 'Panel name',        // in which panel of the interface the option will be displayed
-  // },
+  dotRadius: {
+    type: 'number',
+    label: 'Dot diameter',
+    default: 2,
+    group: 'Chart',
+  },
+
+  rowHeight: {
+    type: 'number',
+    label: 'Row height',
+    default: 30,
+    group: 'Chart',
+  },
+
+  sections: {
+    type: 'number',
+    label: 'Number of sections',
+    default: 1,
+    group: 'Chart',
+  },
+
+  sectionGap: {
+    type: 'number',
+    label: 'gap between sections',
+    default: 0,
+    group: 'Chart',
+  },
+
+  colorScale: {
+    type: 'colorScale',
+    label: 'Color scale',
+    dimension: 'color',
+    default: {
+      scaleType: 'ordinal',
+      interpolator: 'interpolateSpectral',
+    },
+    group: 'colors',
+  },
 }
