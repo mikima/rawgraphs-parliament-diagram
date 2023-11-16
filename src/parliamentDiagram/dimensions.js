@@ -16,12 +16,16 @@ export const dimensions = [
   //   },
   //   operation: 'get',
   // },
-
-  //example dimension
   {
-    id: 'x',
-    name: 'x axis',
+    id: 'seats',
+    name: 'Number of seats',
     validTypes: ['number'],
+    required: true,
+  },
+  {
+    id: 'color',
+    name: 'Party color',
+    validTypes: ['string'],
     required: false,
   },
 ]
