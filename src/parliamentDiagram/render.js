@@ -38,9 +38,9 @@ export function render(
   // check that the amout is equal to data
   const totalSeats = d3.sum(data, (d) => d.seats)
   const totalDots = chart.selectAll('circle').size()
-  if (totalDots < totalSeats) {
-    throw new Error(
-      `Increase artboard size or decrease dots radius. Ath the moment only ${totalDots} dots out of ${totalSeats} are plotted.`
-    )
-  }
+  // if (totalDots < totalSeats) {
+  //   throw new Error(
+  //     `Increase artboard size or decrease dots radius. Ath the moment only ${totalDots} dots out of ${totalSeats} are plotted.`
+  //   )
+  // }
 }

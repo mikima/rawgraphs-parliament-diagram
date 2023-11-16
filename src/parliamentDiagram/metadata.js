@@ -1,8 +1,10 @@
+import icon from './pariamentDiagram.svg'
+
 export const metadata = {
   name: 'emty chart',
   id: 'rawgraphs.emptychart',
   // thumbnail,
-  //icon: you can import an svg file here or a url to an svg file
+  icon,
   categories: ['Test', 'Debugging'],
   description:
     'Semicircular parliament chart, creating one dot for each seat. Based on the d3-parliament-chart by Daniel Kao',
