@@ -1,15 +1,15 @@
 export const visualOptions = {
-  dotRadius: {
+  dotDiameter: {
     type: 'number',
     label: 'Dot diameter',
-    default: 2,
+    default: 4,
     group: 'Chart',
   },
 
   rowHeight: {
     type: 'number',
     label: 'Row height',
-    default: 30,
+    default: 15,
     group: 'Chart',
   },
 

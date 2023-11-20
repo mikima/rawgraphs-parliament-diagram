@@ -26,7 +26,7 @@ export function render(
     .parliamentChart()
     .width(visualOptions.width)
     .aggregatedData(parliamentData)
-    .seatRadius(visualOptions.dotRadius)
+    .seatRadius(visualOptions.dotDiameter / 2)
     .rowHeight(visualOptions.rowHeight)
     .sections(visualOptions.sections)
     .sectionGap(visualOptions.sectionGap)
