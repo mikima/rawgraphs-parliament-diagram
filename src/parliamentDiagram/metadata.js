@@ -1,8 +1,8 @@
-import icon from './pariamentDiagram.svg'
+import icon from './parliamentDiagram.svg'
 
 export const metadata = {
-  name: 'emty chart',
-  id: 'rawgraphs.emptychart',
+  name: 'Parliament diagram',
+  id: 'rawgraphs.parliamentDiagram',
   // thumbnail,
   icon,
   categories: ['Test', 'Debugging'],
