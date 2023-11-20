@@ -34,6 +34,24 @@ export function render(
 
   let chart = svg.append('g').call(pc)
 
+  // draw the label
+  if (visualOptions.showLegend) {
+    // svg width is adjusted automatically because of the "container:height" annotation in legendWidth visual option
+
+    const legendLayer = svg
+      .append('g')
+      .attr('id', 'legend')
+      .attr('transform', `translate(${visualOptions.width},${0})`)
+
+    const chartLegend = legend().legendWidth(visualOptions.legendWidth)
+    console.log(mapping)
+    if (mapping.partyColor.value) {
+      chartLegend.addColor(mapping.partyColor.value, visualOptions.colorScale)
+    }
+
+    legendLayer.call(chartLegend)
+  }
+
   // since the library is not always able to position all the dots,
   // check that the amout is equal to data
   const totalSeats = d3.sum(data, (d) => d.seats)
